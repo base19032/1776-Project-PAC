@@ -9,6 +9,13 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      border: 0;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      border: none;
     }
 
     body {
@@ -132,18 +139,6 @@
       background: #0056b3;
     }
 
-    .unsubscribe {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-
-    .unsubscribe a {
-      color: #888;
-      text-decoration: underline;
-    }
-
     details {
       background: #f4f4f4;
       color: #222;
@@ -162,6 +157,34 @@
       margin-top: 40px;
       font-size: 0.9rem;
       color: #555;
+    }
+
+    .unsubscribe-form {
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .unsubscribe-form input {
+      width: 80%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #aaa;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .unsubscribe-form button {
+      padding: 10px 20px;
+      background: #999;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .unsubscribe-form button:hover {
+      background: #666;
     }
   </style>
 </head>
@@ -201,10 +224,15 @@
       <button type="submit">Set Pledge Reminder</button>
     </form>
 
-    <!-- Unsubscribe -->
-    <div class="unsubscribe">
-      <p>Thinking of unsubscribing? We get it—your inbox is busy. But staying with us means you’ll hear key updates about our fight for America.</p>
-      <a href="https://script.google.com/macros/s/AKfycby-h_Pa3wxpiLDQeAyiP2Q5tk7MKtoEyqfMs834KV0QGaFeoNMDH5M-qJ7fhEai7Ola3w/exec?unsubscribe=true">Unsubscribe</a>
+    <!-- Unsubscribe Form (JJ Style) -->
+    <div class="unsubscribe-form">
+      <h3>Too many emails?</h3>
+      <p>Enter your email below and we’ll never email you again.</p>
+      <form action="https://script.google.com/macros/s/AKfycby-h_Pa3wxpiLDQeAyiP2Q5tk7MKtoEyqfMs834KV0QGaFeoNMDH5M-qJ7fhEai7Ola3w/exec" method="GET">
+        <input type="email" name="unsubscribe" placeholder="Your email address" required />
+        <br/>
+        <button type="submit">Unsubscribe Me</button>
+      </form>
     </div>
 
     <!-- FAQ Section -->
