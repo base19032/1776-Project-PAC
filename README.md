@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>1776 Project PAC</title>
+  <title>Donate | 1776 Project PAC</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
       background: url('tucker.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
@@ -32,10 +36,21 @@
       color: #222;
     }
 
+    .branding {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #003366;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
     h1 {
       text-align: center;
       color: #003366;
       font-size: 2rem;
+      margin-bottom: 5px;
     }
 
     h2 {
@@ -43,6 +58,7 @@
       font-weight: normal;
       margin-top: -10px;
       color: #444;
+      margin-bottom: 20px;
     }
 
     p {
@@ -151,6 +167,8 @@
 </head>
 <body>
   <div class="container">
+    <div class="branding">1776 Project PAC</div>
+
     <h1>Donate Once, Hassle-Free!</h1>
     <h2>Your one-time gift powers our campaign—without the spam.</h2>
 
