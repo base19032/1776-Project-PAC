@@ -2,68 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1776 Project PAC | One-Time Donation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Support the 1776 Project PAC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: url('Screenshot%202025-06-06%20at%202.39.24%E2%80%AFPM.png') no-repeat center center fixed;
+      background: url('tucker.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #222;
+      color: #fff;
     }
 
     body::before {
       content: "";
       position: fixed;
       inset: 0;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(0, 0, 0, 0.55);
       z-index: -1;
     }
 
     .container {
       max-width: 600px;
-      margin: 50px auto;
-      background: white;
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.95);
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      color: #222;
     }
 
     h1 {
-      color: #003366;
+      color: #004080;
       font-size: 2em;
+      font-weight: bold;
       text-align: center;
+      margin-bottom: 10px;
     }
 
     h2 {
-      color: #003366;
+      font-size: 1.2em;
+      text-align: center;
+      margin-bottom: 20px;
     }
 
     p {
-      font-size: 1.1em;
-      line-height: 1.5;
+      font-size: 1rem;
+      margin-bottom: 20px;
     }
 
-    .cta-button {
-      display: block;
-      width: 100%;
-      padding: 15px;
-      background-color: #e63900;
-      color: white;
-      font-size: 1.2em;
-      font-weight: bold;
+    .donate-buttons {
       text-align: center;
-      text-decoration: none;
-      border-radius: 6px;
       margin: 20px 0;
     }
 
-    .trust {
+    .donate-buttons a {
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 6px;
+      background: #ff5500;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .donate-buttons a:hover {
+      background: #cc4400;
+    }
+
+    .secure-badge {
       text-align: center;
-      font-size: 0.9em;
-      color: #555;
+      font-size: 0.9rem;
+      color: #008000;
+      margin-top: 8px;
     }
 
     form {
@@ -101,11 +113,16 @@
       background: #0056b3;
     }
 
-    .unsubscribe-link {
-      font-size: 0.85em;
-      color: gray;
-      margin-top: 20px;
+    .unsubscribe-text {
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 25px;
       text-align: center;
+    }
+
+    .unsubscribe-text a {
+      color: #888;
+      text-decoration: underline;
     }
 
     details {
@@ -114,58 +131,58 @@
 
     summary {
       font-weight: bold;
-      font-size: 1.1em;
       cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #444;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Donate Once, Hassle-Free!</h1>
-    <p><strong>Your one-time gift powers our campaign—without the spam.</strong></p>
-    <p>We respect your support and promise to only charge you once this season. You might get a few friendly reminders, but once you donate, we won’t ask again. Unlike others, we keep your info private and never share it. Your contribution fuels our mission to defend American values.</p>
+    <h2>Your one-time gift powers our campaign—without the spam.</h2>
 
-    <a class="cta-button" href="https://secure.winred.com/1776-project-pac/moralrighttucker-tuckerpunchemail-em-be/?recurring=true&amtposition=2">Give Once Now</a>
-    <div class="trust">🔒 100% Secure Payment</div>
+    <p>We respect your support and promise to only charge you once this season. You might get a few friendly reminders, but once you donate, we won’t ask again. Unlike others, we keep your info private and never share it. Your contribution fuels our mission to.</p>
+
+    <div class="donate-buttons">
+      <a href="https://secure.winred.com/1776-project-pac/moralrighttucker-tuckerpunchemail-em-be/?recurring=true&amtposition=2">Give Once Now</a>
+      <div class="secure-badge">🔒 100% Secure Payment</div>
+    </div>
 
     <!-- Pledge Form -->
     <form action="https://script.google.com/macros/s/AKfycby-h_Pa3wxpiLDQeAyiP2Q5tk7MKtoEyqfMs834KV0QGaFeoNMDH5M-qJ7fhEai7Ola3w/exec" method="GET">
-      <h2>Not ready yet?</h2>
-      <p>Pick a date and amount for a one-time reminder.</p>
-      <label for="email">Your Email:</label>
-      <input type="email" name="email" required>
+      <h2>Not ready yet? Pick a date and amount for a one-time reminder.</h2>
 
-      <label for="pledge_date">Reminder Date:</label>
-      <select name="pledge_date" required>
-        <option value="2025-06-10">June 10</option>
-        <option value="2025-06-15">June 15</option>
-        <option value="2025-06-20">June 20</option>
+      <label for="pledge-date">Reminder Date</label>
+      <select name="pledge-date" required>
+        <option value="">Select a date</option>
+        <option value="2025-07-01">July 1</option>
+        <option value="2025-07-15">July 15</option>
+        <option value="2025-08-01">August 1</option>
       </select>
 
-      <label for="pledge_amount">Pledge Amount ($):</label>
-      <input type="number" name="pledge_amount" min="1" required>
+      <label for="pledge-amount">Pledge Amount ($)</label>
+      <input type="number" name="pledge-amount" min="1" required>
 
-      <button type="submit">Set Pledge Reminder</button>
+      <label for="email">Your Email</label>
+      <input type="email" name="email" required>
+
+      <button type="submit">Set Reminder</button>
     </form>
 
-    <!-- Unsubscribe Option -->
-    <div class="unsubscribe-link">
-      <p>Thinking of unsubscribing? We get it—your inbox is busy. But staying with us means you’ll hear key updates about our fight for freedom. We’ll only send a few messages to inspire your one-time gift.</p>
-      <p><a href="https://script.google.com/macros/s/AKfycby-h_Pa3wxpiLDQeAyiP2Q5tk7MKtoEyqfMs834KV0QGaFeoNMDH5M-qJ7fhEai7Ola3w/exec?unsubscribe=true" style="color: gray;">Unsubscribe</a></p>
+    <!-- Unsubscribe -->
+    <div class="unsubscribe-text">
+      Thinking of unsubscribing? We get it—your inbox is busy. But staying with us means you’ll hear key updates about our fight for. We’ll only send a few messages to inspire your one-time gift.
+      <br><br>
+      <a href="https://script.google.com/macros/s/AKfycby-h_Pa3wxpiLDQeAyiP2Q5tk7MKtoEyqfMs834KV0QGaFeoNMDH5M-qJ7fhEai7Ola3w/exec?unsubscribe=true">Unsubscribe</a>
     </div>
 
     <!-- FAQ -->
     <details>
-      <summary>FAQs</summary>
-      <p><strong>Why only one donation?</strong> We value your support and respect your inbox. You’ll only be charged once this season—no repeat asks.</p>
-      <p><strong>Will I get multiple messages?</strong> We may send a few gentle reminders to encourage your one-time gift, but once you donate, we won’t ask again this season.</p>
-      <p><strong>What’s the pledge reminder?</strong> Choose a date and amount for a single, friendly reminder about your one-time donation—no pressure, just a nudge.</p>
-      <p><strong>Is my information shared?</strong> Never. Your data stays secure with us and is never sold or shared with other vendors.</p>
-      <p><strong>Is my donation secure?</strong> Yes, we use top-tier encryption to protect your payment. Look for the lock icon at checkout.</p>
-      <p><strong>What if others contact me?</strong> We can’t control other vendors, but we pledge to keep your info private and only charge once.</p>
-    </details>
-
-    <p style="text-align: center; margin-top: 40px; font-weight: bold; color: #003366;">One Gift, Zero Hassle – Your trusted way to support us.</p>
-  </div>
-</body>
-</html>
+      <summary>Fr
