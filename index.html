@@ -206,20 +206,14 @@
     <form action="https://script.google.com/macros/s/AKfycbwRGTNvOe_LysKogEotTGRVFygSvWZV6u7ZAqEK8p7aRz_My6F0urXIiJq5dUAjN08P/exec" method="GET">
       <h3 style="text-align:center;">Not ready yet? Pick a date and amount for a one-time reminder.</h3>
 
-      <label for="email">Your Email:</label>
-      <input type="email" name="email" required />
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="you@example.com">
 
-      <label for="pledge-date">Reminder Date:</label>
-      <select name="pledge-date" required>
-        <option value="">Select a date</option>
-        <option>June 10</option>
-        <option>June 15</option>
-        <option>June 20</option>
-        <option>July 1</option>
-      </select>
+      <label for="amount">Amount:</label>
+      <input type="number" name="amount" required>
 
-      <label for="pledge-amount">Pledge Amount ($):</label>
-      <input type="number" name="pledge-amount" min="1" required />
+      <label for="date">Reminder Date:</label>
+      <input type="date" name="date" required>
 
       <button type="submit">Set Pledge Reminder</button>
     </form>
